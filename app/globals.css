@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Відступ для хедера */
+  *[id] {
+    scroll-margin-top: 80px;
+  }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  /* СВІТЛА ТЕМА (за замовчуванням) */
+
+  --background: #F7F5EF;          /* Задній фон | Light/Background */
+  --foreground: #19221F;          /* Головний текст | Light/Text Primary */
+  --secondary: #66706B;           /* Вторинний текст | Light/Text Secondary */
+
+  --primary: #2455EF;             /* Брендовий колір | Light/Brand Blue */
+  --accent-blue: #8EA9FF;         /* Акцентний синій колір | Light/Accent Blue */
+  --accent-yellow: #F4EE91;       /* Акцентний жовтий колір | Light/Accent Yellow */
+
+  --surface-blue: #E6ECFF;        /* Фон плашок/карток | Light/Surface Blue */
+  --surface-raised: #FFFFFF;      /* Припідняті поверхні | Light/Surface Raised */
+
+  --border: #DEDFD6;              /* Границі елементів/розділювальні лінії | Light/Border */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* ТЕМНА ТЕМА */
+
+    --background: #050914;          /* Задній фон | Dark/Background */
+    --foreground: #F5F6FA;          /* Головний текст | Dark/Text Primary */
+    --secondary: #ADB9CD;           /* Вторинний текст | Dark/Text Secondary */
+
+    --primary: #2455EF;             /* Брендовий колір | Dark/Brand Blue */
+    --accent-blue: #8EA9FF;         /* Акцентний синій колір | Dark/Accent Blue */
+    --accent-yellow: #F4EE91;       /* Акцентний жовтий колір | Dark/Accent Yellow */
+
+    --surface-blue: #0D172B;        /* Фон плашок/карток | Dark/Surface Blue */
+    --surface-raised: #070D19;      /* Припідняті поверхні | Dark/Surface Raised */
+
+    --border: #1C2D4A;              /* Границі елементів/розділювальні лінії | Dark/Border */
   }
 }
 
+@theme inline {
+  /* Реєстрація токенів */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+
+  --color-primary: var(--primary);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-yellow: var(--accent-yellow);
+
+  --color-surface-blue: var(--surface-blue);
+  --color-surface-raised: var(--surface-raised);
+
+  --color-border: var(--border);
+
+  /* Аліаси для стандартних утиліт Tailwind */
+  --color-muted: var(--border);
+  --color-muted-foreground: var(--secondary);
+
+  --font-sans: var(--font-inter, "Inter", sans-serif);
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
