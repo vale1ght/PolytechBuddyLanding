@@ -126,7 +126,7 @@ export default function Header() {
                     <div className="mt-auto bg-surface-raised rounded-3xl p-5">
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-col gap-2">
-                                <div className="flex items-start justify-between">
+                                <div className="flex items-center justify-between">
                                     <h3 className="text-xl font-bold tracking-tight text-foreground">
                                         Ну що, на старт?
                                     </h3>
