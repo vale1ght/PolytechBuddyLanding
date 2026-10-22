@@ -144,7 +144,7 @@ export default function Header() {
                                 href="https://t.me/PolytechBuddyBot"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center gap-2.5 font-semibold rounded-2xl bg-primary transition-opacity w-full h-14"
+                                className="inline-flex items-center justify-center gap-2.5 font-semibold rounded-2xl bg-primary text-white transition-opacity w-full h-14"
                             >
                                 <svg
                                     className="w-5 h-5 shrink-0"
