@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type {Metadata} from "next";
+import {Inter} from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -13,17 +13,19 @@ export const metadata: Metadata = {
     description: "Політех Бадді – Telegram-бот, який допомагає зорієнтуватися в хаосі Політеху.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({children}: LayoutProps<"/">) {
     return (
         <html
-            lang="en"
+            lang="uk"
             className={inter.variable}
         >
             <body
                 className="bg-background text-foreground font-sans antialiased min-h-screen flex flex-col"
             >
                 <Header/>
-                {children}
+                <main>
+                    {children}
+                </main>
             </body>
         </html>
     );
