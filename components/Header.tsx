@@ -69,12 +69,12 @@ export default function Header() {
 
             <div
                 className={clsx(
-                    "fixed inset-x-0 top-20 bg-background transition-all duration-300 ease-in-out overflow-y-auto flex flex-col z-10 h-[calc(100dvh-5rem)]",
+                    "fixed inset-x-0 top-20 bg-background transition-all duration-300 ease-in-out overflow-y-auto flex flex-col z-10 bottom-0",
                     isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
                 )}
             >
                 <div
-                    className="px-6 py-8 flex flex-col flex-1 gap-6 mx-auto w-full"
+                    className="px-6 py-8 flex flex-col flex-1 gap-6 mx-auto w-full max-w-7xl"
                 >
                     <div
                         className="flex flex-col gap-3"
