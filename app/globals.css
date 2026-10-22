@@ -19,7 +19,7 @@
   --secondary: #66706B;           /* Вторинний текст | Light/Text Secondary */
 
   --primary: #2455EF;             /* Брендовий колір | Light/Brand Blue */
-  --accent-blue: #8EA9FF;         /* Акцентний синій колір | Light/Accent Blue */
+  --accent-blue: var(--primary);         /* Акцентний синій колір | Light/Accent Blue */
   --accent-yellow: #F4EE91;       /* Акцентний жовтий колір | Light/Accent Yellow */
 
   --surface-blue: #E6ECFF;        /* Фон плашок/карток | Light/Surface Blue */
