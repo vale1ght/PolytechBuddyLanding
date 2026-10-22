@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <body
                 className="bg-background text-foreground font-sans antialiased min-h-screen flex flex-col"
             >
+                <Header/>
                 {children}
             </body>
         </html>
