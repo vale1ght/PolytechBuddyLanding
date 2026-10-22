@@ -11,8 +11,8 @@ interface Props {
 
 function TelegramButton({ children = "Відкрити в Telegram", variant = "primary" }: Props) {
     const variantClasses = {
-        primary: "bg-primary text-primary-foreground",
-        white: "bg-white text-primary"
+        primary: "bg-primary text-white",
+        white: "bg-white text-primary",
     };
 
     return (

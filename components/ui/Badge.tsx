@@ -9,7 +9,7 @@ type Props = {
 export default function Badge({children, className}: Props) {
     return (
         <span className={clsx(
-            "w-fit text-[11px] font-bold tracking-[0.125em] text-badge-primary uppercase",
+            "text-[11px] font-bold tracking-[0.125em] text-accent-blue uppercase",
             className)}
         >
             {children}
