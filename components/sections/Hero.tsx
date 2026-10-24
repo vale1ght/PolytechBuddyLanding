@@ -1,9 +1,10 @@
 import Badge from "@/components/ui/Badge";
 import TelegramButton from "@/components/ui/TelegramButton";
+import Section from "@/components/ui/Section";
 
 export default function Hero() {
     return (
-        <section id="hero" className="flex flex-col w-full px-6 pt-7 pb-10">
+        <Section id="hero" className="flex flex-col pt-7 pb-10">
             <div className="flex flex-col gap-6">
                 <Badge>Твій студентський бот</Badge>
 
@@ -24,6 +25,6 @@ export default function Hero() {
             <div>
                 {/* TODO: Preview card */}
             </div>
-        </section>
+        </Section>
     )
 }
