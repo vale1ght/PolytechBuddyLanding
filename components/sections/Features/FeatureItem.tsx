@@ -13,7 +13,7 @@ export default function FeatureItem({icon: Icon, title, description}: Props) {
                 <Icon className="w-6 h-6 text-accent-blue" strokeWidth={1.5}/>
             </div>
 
-            <div>
+            <div className="flex flex-col gap-2">
                 <h3 className="text-[20px] leading-tight font-bold text-foreground">
                     {title}
                 </h3>
