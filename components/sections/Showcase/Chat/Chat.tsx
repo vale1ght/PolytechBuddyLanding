@@ -1,12 +1,11 @@
 import ChatHeader from "./ChatHeader";
 import ChatBubble from "./ChatBubble";
 import ChatButton from "./ChatButton";
-import DesktopChat from "./DesktopChat";
 
 export default function ChatShowcase() {
     return (
-        <div className="w-full min-w-0">
-            <div className="lg:hidden w-full bg-surface-raised rounded-4xl p-5 sm:p-6 flex flex-col">
+        <div className="w-full min-w-0 lg:ml-auto lg:max-w-[460px]">
+            <div className="flex w-full flex-col rounded-4xl bg-surface-raised p-5 sm:p-6">
                 <ChatHeader />
 
                 <hr className="border-muted my-5 w-full" />
@@ -29,8 +28,6 @@ export default function ChatShowcase() {
                     <ChatButton>Успішність</ChatButton>
                 </div>
             </div>
-
-            <DesktopChat/>
         </div>
     );
 }

@@ -15,7 +15,7 @@ export default function CTA() {
                         className="h-[52px] w-[52px] rounded-xl lg:h-10 lg:w-10"
                     />
 
-                    <div className="flex rounded-2xl bg-accent-yellow px-3.5 py-2.5 font-semibold text-black -rotate-3 lg:rounded-full lg:px-4">
+                    <div className="flex -rotate-3 rounded-2xl bg-accent-yellow px-3.5 py-2.5 font-semibold text-black">
                         Ну що, на старт?
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export default function CTA() {
                     Відкрий бота, надішли /start та обери доступну дію. Побачимось у Telegram :)
                 </p>
 
-                <TelegramButton variant="white" arrow/>
+                <TelegramButton variant="white"/>
             </div>
         </Section>
     );
