@@ -8,6 +8,7 @@ import MenuButton from "./MenuButton";
 import MenuTitle from "./MenuTitle";
 import LinksList from "./LinksList";
 import CTA from "./CTA";
+import ThemeSwitch from "@/components/theme/ThemeSwitch";
 
 export default function MobileMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,6 +32,8 @@ export default function MobileMenu() {
                     <MenuTitle/>
 
                     <LinksList onClick={closeMenu}/>
+
+                    <ThemeSwitch labeled/>
 
                     <div className="flex-1"/>
 
