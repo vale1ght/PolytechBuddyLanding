@@ -10,7 +10,7 @@ interface Props {
 export default function Section({id, children, className}: Props) {
     return (
         <section id={id} className={clsx(
-            "flex flex-col w-full px-6 py-14",
+            "page-gutter flex flex-col w-full px-6 py-14",
             className,
         )}>
             {children}

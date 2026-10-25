@@ -8,7 +8,7 @@ interface Props {
 
 export default function FeatureItem({icon: Icon, title, description}: Props) {
     return (
-        <li className="flex items-start gap-4 py-6 border-b border-border first:pt-0 last:pb-0 last:border-none">
+        <li className="flex items-start gap-4 py-6 border-b border-border first:pt-0 last:pb-0 last:border-none lg:border-none lg:py-0">
             <div className="w-11 h-11 shrink-0 bg-surface-blue rounded-2xl flex items-center justify-center">
                 <Icon className="w-6 h-6 text-accent-blue" strokeWidth={1.5}/>
             </div>

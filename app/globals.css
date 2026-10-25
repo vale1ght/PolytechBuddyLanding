@@ -12,6 +12,7 @@
 }
 
 :root {
+  color-scheme: light;
   /* СВІТЛА ТЕМА (за замовчуванням) */
 
   --background: #F7F5EF;          /* Задній фон | Light/Background */
@@ -28,10 +29,22 @@
   --border: #DEDFD6;              /* Границі елементів/розділювальні лінії | Light/Border */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* ТЕМНА ТЕМА */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #050914;
+  --foreground: #F5F6FA;
+  --secondary: #ADB9CD;
+  --primary: #2455EF;
+  --accent-blue: #8EA9FF;
+  --accent-yellow: #F4EE91;
+  --surface-blue: #15264A;
+  --surface-raised: #0D172B;
+  --border: #1C2D4A;
+}
 
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --background: #050914;          /* Задній фон | Dark/Background */
     --foreground: #F5F6FA;          /* Головний текст | Dark/Text Primary */
     --secondary: #ADB9CD;           /* Вторинний текст | Dark/Text Secondary */
@@ -75,4 +88,64 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 64rem) {
+  .page-gutter {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 85rem) {
+  .page-gutter {
+    padding-left: calc((100% - 80rem) / 2);
+    padding-right: calc((100% - 80rem) / 2);
+  }
+}
+
+.theme-icon-dark,
+.theme-label-dark {
+  display: none;
+}
+
+.theme-knob {
+  transform: translateX(0);
+  transition: transform 200ms ease;
+}
+
+html[data-theme="dark"] .theme-knob {
+  transform: translateX(1.5rem);
+}
+
+html[data-theme="dark"] .theme-icon-light,
+html[data-theme="dark"] .theme-label-light {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-icon-dark {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-label-dark {
+  display: inline;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .theme-knob {
+    transform: translateX(1.5rem);
+  }
+
+  html:not([data-theme="light"]) .theme-icon-light,
+  html:not([data-theme="light"]) .theme-label-light {
+    display: none;
+  }
+
+  html:not([data-theme="light"]) .theme-icon-dark {
+    display: block;
+  }
+
+  html:not([data-theme="light"]) .theme-label-dark {
+    display: inline;
+  }
 }
