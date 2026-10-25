@@ -18,7 +18,7 @@ export default function HeroPreview() {
                             alt=""
                             width={200}
                             height={200}
-                            className="h-[104px] w-[104px] shrink-0 -rotate-[8deg] rounded-[32px] sm:h-[118px] sm:w-[118px] lg:h-[140px] lg:w-[140px] lg:rounded-[40px] xl:h-[156px] xl:w-[156px]"
+                            className="h-[104px] w-[104px] shrink-0 -translate-y-[18px] -rotate-[8deg] rounded-[32px] sm:h-[118px] sm:w-[118px] lg:h-[140px] lg:w-[140px] lg:translate-y-0 lg:rounded-[40px] xl:h-[156px] xl:w-[156px]"
                         />
 
                         <div className="mb-1 min-w-0 rotate-[6deg] rounded-2xl bg-primary px-4 py-3 text-white lg:px-5 lg:py-3.5">
