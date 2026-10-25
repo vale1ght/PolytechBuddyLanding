@@ -1,6 +1,5 @@
 import {ReactNode} from "react";
 import clsx from "clsx";
-import {ArrowUpRight} from "lucide-react";
 import TelegramIcon from "@/components/icons/TelegramIcon";
 
 type ButtonVariants = "primary" | "white";
@@ -8,13 +7,12 @@ type ButtonVariants = "primary" | "white";
 interface Props {
     children?: ReactNode;
     variant?: ButtonVariants;
-    arrow?: boolean;
 }
 
-function TelegramButton({ children = "Відкрити в Telegram", variant = "primary", arrow = false }: Props) {
+function TelegramButton({ children = "Відкрити в Telegram", variant = "primary" }: Props) {
     const variantClasses = {
         primary: "bg-primary text-white",
-        white: "bg-white text-primary lg:rounded-full",
+        white: "bg-white text-primary",
     };
 
     return (
@@ -32,8 +30,6 @@ function TelegramButton({ children = "Відкрити в Telegram", variant = "
             <span>
                 {children}
             </span>
-
-            {arrow && <ArrowUpRight className="hidden h-4 w-4 lg:block" strokeWidth={2.25}/>}
         </a>
     );
 }
