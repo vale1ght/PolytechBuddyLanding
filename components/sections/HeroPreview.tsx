@@ -8,7 +8,7 @@ export default function HeroPreview() {
                 <Badge>Знайомся, це твій Бадді</Badge>
 
                 <div className="relative mt-4 lg:mt-5">
-                    <div className="absolute top-0 right-0 z-10 -rotate-[3deg] rounded-2xl bg-white px-4 py-3 text-[14px] font-semibold leading-none text-[#19221F] shadow-[0_10px_24px_-16px_rgba(25,34,31,0.4)] sm:px-5 sm:py-3.5 sm:text-[16px] lg:px-6 lg:py-4 lg:text-[18px]">
+                    <div className="absolute top-0 right-0 z-10 -rotate-[3deg] rounded-[18px] bg-white px-4 py-3 text-[14px] font-semibold leading-none text-[#19221F] shadow-[0_10px_24px_-16px_rgba(25,34,31,0.4)] sm:px-5 sm:py-3.5 sm:text-[16px] lg:px-6 lg:py-4 lg:text-[18px]">
                         Коли там наступна пара?
                     </div>
 
@@ -18,10 +18,10 @@ export default function HeroPreview() {
                             alt=""
                             width={200}
                             height={200}
-                            className="h-[104px] w-[104px] shrink-0 -rotate-[8deg] rounded-[32px] sm:h-[118px] sm:w-[118px] lg:h-[140px] lg:w-[140px] lg:rounded-[40px] xl:h-[156px] xl:w-[156px]"
+                            className="h-[104px] w-[104px] shrink-0 -translate-y-[18px] -rotate-[8deg] rounded-[32px] sm:h-[118px] sm:w-[118px] lg:h-[140px] lg:w-[140px] lg:translate-y-0 lg:rounded-[45px] xl:h-[156px] xl:w-[156px]"
                         />
 
-                        <div className="mb-1 min-w-0 rotate-[6deg] rounded-2xl bg-primary px-4 py-3 text-white lg:px-5 lg:py-3.5">
+                        <div className="mb-1 min-w-0 rotate-[6deg] rounded-[20px] bg-primary px-4 py-3 text-white lg:px-5 lg:py-3.5">
                             <p className="text-[10px] font-bold tracking-[0.14em] text-[#B7C8FF] uppercase lg:text-[11px]">
                                 Бадді
                             </p>
