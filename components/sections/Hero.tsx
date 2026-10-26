@@ -5,7 +5,7 @@ import HeroPreview from "@/components/sections/HeroPreview";
 
 export default function Hero() {
     return (
-        <Section id="hero" className="flex flex-col pt-7 pb-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:pt-16 lg:pb-20 xl:gap-16 xl:pt-20 xl:pb-24">
+        <Section id="hero" className="flex flex-col pt-7 pb-10 gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:pt-16 lg:pb-20 xl:gap-16 xl:pt-20 xl:pb-24">
             <div className="flex flex-col gap-6 lg:max-w-[34rem] lg:shrink-0 xl:max-w-[38rem] xl:gap-8">
                 <Badge>Твій студентський бот</Badge>
 
